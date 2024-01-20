@@ -21,8 +21,8 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar pt-5">
-      <ul className="navbar-list">
+    <div className="navbar">
+      <ul className="navbar-list mt-5">
         <li>
           <Hamburger />
         </li>
@@ -36,7 +36,7 @@ function Navbar() {
 
         </li>
       </ul>
-      <div className="nav-menu-items">
+      {/* <div className="nav-menu-items">
         <ul className="menu-item-list">
           <li>
             <h1>Home.</h1>
@@ -54,7 +54,7 @@ function Navbar() {
             <h1>Contact.</h1>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

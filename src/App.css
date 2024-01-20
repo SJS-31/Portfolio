@@ -614,6 +614,17 @@ p{
   color: var(--heading-color);
 }
 
+@media only screen and (max-width: 640px) {
+  .home-heading-bg {
+    top: 64%; 
+    font-size: 4.5em;
+  }
+  .pic-text {
+    top: 60%; 
+    font-size: 4em;
+  }
+}
+
 .home-pic {
   position: absolute;
   left: 50%;
@@ -623,7 +634,7 @@ p{
 }
 
 .home-pic-img {
-  width: 300px;
+  width: 380px;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -813,12 +824,26 @@ p{
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 640px) {
+  .about-me-bg{
+    font-size: 5em;
+  }
+  .about-me-text{
+    font-size: 4em;
+  }
+  .about-me-content-div{
+    font: 1em sans-serif;;
+    text-align: center; /* Center the text horizontally */
+  padding: 4;
+  }
+}
+
 /* **************** Reveal content animation  */
 
 .content-reveal {
-  display: block;
+  /* display: block;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .content-reveal::after {
@@ -1846,8 +1871,8 @@ a{
 
 .circle {
   position: absolute;
-  left: 6%;
-  bottom: -7%;
+  left: 4%;
+  bottom: -3%;
   width: 200px;
   height: 200px;
   background: transparent;
@@ -1859,6 +1884,8 @@ a{
   opacity: 0.5;
   transition-duration: 0.5s;
 }
+
+
 
 .circle:hover {
   opacity: 1;
@@ -1903,7 +1930,17 @@ a{
   text-transform: uppercase;
 }
 
-
+@media only screen and (max-width: 640px) {
+ 
+  .circle {
+    top: 10%;
+    
+  }
+  .circle-text span{
+    left: 50%;
+    font-size: 0.9em;
+  }
+}
 
 /* **************************  Arrows */
 

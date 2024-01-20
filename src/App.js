@@ -17,7 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Arrows from "./arrows";
 
 import img from "./images/SJS.png";
-import Gallery from './Gallery'
+import Gallery from "./Gallery";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(CSSRulePlugin);
@@ -226,16 +226,16 @@ function App() {
                   </div>
 
                   <div className="home-heading">
-                    <h1 className="home-heading-bg" ref={helloAni}>
+                    <h1 className="home-heading-bg " ref={helloAni}>
                       Hey There,
                     </h1>
                     <div className="home-pic">
                       {/* <img className="home-pic-img" src="/mcrop.jpg" alt="my img" /> */}
                       <img className="home-pic-img" src={img} alt="my img" />
 
-                      {/* <p>I'm Mihir Pratap Singh</p> */}
+                      {/* <p>I'm Swapnil J Singh</p> */}
                     </div>
-                    <h1 className="home-heading-bg pic-text">
+                    <h1 className="home-heading-bg pic-text ">
                       <span
                         onMouseEnter={cursorHover}
                         onMouseLeave={cursorHoverRemove}
@@ -247,8 +247,6 @@ function App() {
                     {/* <p>Scroll to Explore</p> */}
                     <Circle />
                     <div className="button-div">
-                      {/* <Button />
-          <Button /> */}
                       <Button2 />
                     </div>
                   </div>
@@ -266,20 +264,14 @@ function App() {
                         onMouseEnter={cursorHover}
                         onMouseLeave={cursorHoverRemove}
                       >
-                        Who I Am
+                        About Me
                       </span>
                     </h1>
                     <h1 className="about-me-bg" ref={aboutMe}>
-                      Who I Am
+                      About Me
                     </h1>
                   </div>
-                  {/* <div className="about-me-div"> */}
-                  {/* <div className="my-pic" ref={picContainer}>
-            <div>
-            <img className="my-pic-image" src="/my_pic2.jpg" alt="my img" ref={myPicRef} />
-            <div className="my-pic-after" ref={myPicDivRef}></div>
-            </div>
-          </div> */}
+
                   <div className="about-me-content-div" ref={aboutMeDivRef}>
                     <p
                       className="about-me-content hover-content"
@@ -289,10 +281,8 @@ function App() {
                       <span className="content-reveal">
                         <span className="highlight">Greetings</span>, fellow
                         human or possibly a cat who stumbled upon my website!{" "}
-                        <span className="highlight">
-                          I'm Mihir Pratap Singh
-                        </span>
-                        , your friendly neighborhood{" "}
+                        <span className="highlight">I'm Swapnil J Singh</span>,
+                        your friendly neighborhood{" "}
                         <span className="highlight">web developer</span>. I'm
                         not entirely sure what I want to conquer in the vast
                         realm of the future.
@@ -346,15 +336,13 @@ function App() {
                       </span>
 
                       <div className="signature">
-                        <div className="signature-btn">
-                          {/* <Button2 /> */}
-                        </div>
+                        <div className="signature-btn">{/* <Button2 /> */}</div>
                         <span
                           className="signature-name"
                           onMouseEnter={cursorHover}
                           onMouseLeave={cursorHoverRemove}
                         >
-                          MihirPratapSingh.......
+                          SwapnilJSingh.......
                         </span>
                       </div>
                     </p>
@@ -362,8 +350,11 @@ function App() {
                   {/* </div> */}
                 </section>
 
-            <section> <Gallery/></section>
-               
+                <section>
+                  {" "}
+                  <Gallery />
+                </section>
+
                 <section className="project">
                   <div className="project-text-div">
                     <h1 className="project-text" ref={projectsRef}>
