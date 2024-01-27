@@ -342,7 +342,7 @@ function App() {
                           onMouseEnter={cursorHover}
                           onMouseLeave={cursorHoverRemove}
                         >
-                          SwapnilJSingh.......
+                          SwapnilJSingh...
                         </span>
                       </div>
                     </p>

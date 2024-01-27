@@ -831,10 +831,8 @@ p{
   .about-me-text{
     font-size: 4em;
   }
-  .about-me-content-div{
-    font: 1em sans-serif;;
-    text-align: center; /* Center the text horizontally */
-  padding: 4;
+  .about-me-content{
+    margin: auto;
   }
 }
 
