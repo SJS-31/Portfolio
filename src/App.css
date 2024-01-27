@@ -759,7 +759,6 @@ p{
 .about-me-text {
   text-align: center;
   color: var(--heading-color);
-  /* margin-top: 100px; */
   margin: 0 0;
   font-size: 6rem;
   position: relative;
@@ -773,9 +772,6 @@ p{
   margin-bottom: 0;
   margin-top: -94px;
   opacity: 0.1;
-  /* position: absolute; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   width: 100%;
 }
 
@@ -793,32 +789,21 @@ p{
 }
 
 .about-me-content-div {
-  /* background-color: white; */
   position: relative;
   height: auto;
-  /* width: 100%; */
   top: 0;
   visibility: visible;
 }
 
 .about-me-content {
-  /* color: lightgoldenrodyellow; */
   color: #b9b9b9;
-  /* font-family: TakenbyVulturesDemo; */
-
-  /* font-family: 'Cormorant Garamond', serif; */
-  /* font-family: 'Mukta', sans-serif; */
   font-family: var(--content-font);
-  /* font-family: 'Maitree', serif; */
   margin-left: 175px;
   margin-right: 175px;
-  /* margin-bottom: 200px; */
-  /* font-size: 2rem; */
   line-height: 1.6;
   font-size: 19px;
   padding: 50px 50px 0px;
   margin-top: 0;
-  /* visibility: visible; */
   opacity: 1;
   text-align: justify;
   overflow-x: hidden;
@@ -954,18 +939,6 @@ p{
   /* position: relative; */
 }
 
-/* .about-me-content h3{
-  font-family: Autone;
-  color: red;
-  opacity: 0.5;
-  margin-top: 0;
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 100;
-  text-align: center;
-
-} */
 
 .my-pic {
   height: 70%;
@@ -1295,25 +1268,25 @@ p{
 }
 
 .skill-detail {
-  /* width: 100%; */
-  /* top: 50%; */
-  /* transform: translate(-45%, -50%); */
-  z-index: 4;
-  /* position: relative; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   background-color: transparent;
-  /* display: flex; */
   visibility: visible;
-  /* padding-bottom: 1000px; */
-  margin-top: 100px;
-  text-align: center;
-  /* overflow-x: hidden; */
+  /* margin-top: 100px; */
+  color: #b9b9b9;
+  font-family: var(--content-font);
+  margin-left: 175px;
+  margin-right: 175px;
+  line-height: 1.6;
+  font-size: 19px;
+  padding: 50px 50px 0px;
+  margin-top: 0;
+  opacity: 1;
+  text-align: justify;
+  overflow-x: hidden;
 }
 
 .skill-detail p{
   display: inline-block;
-  width: 875px;
+  /* width: 875px; */
   margin: 8px 0;
   font-family: var(--content-font);
   color: var(--content-color);
@@ -1356,11 +1329,6 @@ p{
   /* font-size: 2rem; */
 }
 
-/* .skillcard-title::after{
-  content: ">";
-  font-size: 2.5rem;
-} */
-
 .skill-detail-flex {
   display: flex;
   gap: 180px;
@@ -1401,7 +1369,6 @@ p{
 .skill-exp {
   width: 33vw;
   height: 100%;
-  /* background: gray; */
   display: flex;
   align-items: center;
 }
@@ -1413,140 +1380,20 @@ p{
   text-align: justify;
 }
 
-/* .dev-skills{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px 0;
+@media only screen and (max-width: 640px) {
+  .skills-bg{
+    font-size: 5em;
+  }
+  .skills-text{
+    font-size: 4em;
+  }
+  .skill-detail{
+    margin: auto;
+  }
 }
-
-.dev-skills span{
-  transform: rotate(-90deg);
-  font-family: var(--content-font);
-  color: var(--content-color);
-  font-size: 20px;
-  white-space: pre;
-  width: 5%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.skill-title{
-  transform: rotate(-90deg);
-  font-family: var(--content-font);
-  color: var(--content-color);
-  font-size: 20px;
-}
-
-.skill-img{
-  display: flex;
-  width: 100%;
-  justify-content: start;
-  gap: 30px;
-}
-
-.skill-img::before{
-  content: ' ';
-  background-color: white;
-  width: 1px;
-  height: 100%;
-  color: white;
-}
-
-.skill-img img{
-  width: 100px;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  
-} */
-
-/* ******************** previous version */
-
-/* .project-div-2{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-
-.project-content{
-  cursor: pointer;
-  
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  visibility: visible;
-  overflow: hidden;
-  transition: transform 0.7s;
-}
-
-.project-content-img{
-  height: 100%;
-  width: 100%;
-  scale: 1.8;
-  overflow: hidden;
-}
-
-
-.project-content:hover{
-  transform: scale(1.05);
-}
-
-.project-content-cover{
-  background: black;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-
-.project-title{
-  height: 70%;
-  width: 225px;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  top: 50%;
-  transform: translate(-70%, -50%);
-  text-align: center;
-  overflow: visible;
-  cursor: pointer;
-}
-
-
-.project-title h1{
-  color: white;
-  position: absolute;
-  font-family: DidonesqueRoman;
-  font-weight: 100;
-  font-size: 90px;
-  margin-top: 0;
-} 
-
-.project-title p{
-  font-size: 20px;
-  font-family: 'Mukta', sans-serif;
-  margin-top: 0;
-
-}
-
-.project-title span{
-  font-size: 45px;
-  font-family: TakenbyVulturesDemo;
-  left: 0;
-  position: absolute;
-  top: 50px;
-  color: grey;
-} */
-
-
 
 
 /* ******************************************  Contact   ************************************************ */
-
 
 .contact{
   height: 100vh;

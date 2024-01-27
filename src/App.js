@@ -400,11 +400,11 @@ function App() {
                         onMouseEnter={cursorHover}
                         onMouseLeave={cursorHoverRemove}
                       >
-                        Skills & Experience
+                        Skills 
                       </span>
                     </h1>
                     <h1 className="project-bg skills-bg">
-                      Skills & Experience
+                      Skills
                     </h1>
                   </div>
 
