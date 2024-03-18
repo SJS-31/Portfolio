@@ -352,7 +352,7 @@ function App() {
 
                 <section>
                   {" "}
-                  <Gallery />
+                  {/* <Gallery /> */}
                 </section>
 
                 <section className="project">
